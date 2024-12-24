@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Excuses</title>
+    <script>
+        function randomExcuse() {
+            const excuses = [
+                "I forgot my phone.",
+                "I had a flat tire.",
+                "I was caught in traffic.",
+                "My alarm didn’t go off.",
+                "I lost track of time.",
+                "I was helping a friend.",
+                "I had an emergency at home.",
+                "My internet went out.",
+                "I wasn’t feeling well.",
+                "I got lost on the way.",
+                "I have school in the morning; I’m super busy.",
+                "I was rushing to get ready for the day.",
+                "I was driving and couldn’t pick up.",
+                "I was running errands (groceries, etc.).",
+                "I had a group project meeting.",
+                "I was doing laundry or cleaning up.",
+                "I was cooking dinner.",
+                "I fell asleep for a bit.",
+                "I was talking to my mom/brother/friend.",
+                "My friend had something serious to say.",
+                "I had to grab something from the fridge.",
+                "The food delivery took forever.",
+                "I was stuck on the toilet.",
+                "I lost track of time cleaning up.",
+                "My phone was on DND, didn’t see your call.",
+                "My phone was upside down; I didn’t hear it.",
+                "I ran out of battery.",
+                "My PC sound isn’t working.",
+                "My phone or account got hacked, sorry!",
+                "The charger started sparking; I freaked out.",
+                "The tram was late again; it’s so unreliable.",
+                "I couldn’t find my card and had to search everywhere.",
+                "I was gaming with Luca and the guys.",
+                "I accidentally threw something and spent ages looking for it.",
+                "I got stuck scrolling and forgot to reply.",
+                "I was binge-watching and lost track of time.",
+                "The Wi-Fi was acting up.",
+                "I literally set the kitchen on fire.",
+                "I had a sudden philosophical debate with my friend.",
+                "I got caught up rescuing a cat from a tree.",
+                "I got locked out of my house.",
+                "I was finishing an assignment that’s due tonight.",
+                "I got stuck in traffic.",
+                "I forgot my phone in another room.",
+                "I was packing for a trip and lost track of time.",
+                "I was reorganizing my room.",
+                "I was on another call.",
+                "My professor gave us extra tasks to do last-minute.",
+                "I was helping my friend with their project.",
+                "I had a headache.",
+                "I was in the shower.",
+                "I didn’t know what to say, so I didn’t reply.",
+                "The game was on, I couldn’t miss it.",
+                "I didn’t think it was urgent.",
+                "I forgot, my bad."
+            ];
+            const randomIndex = Math.floor(Math.random() * excuses.length);
+            document.getElementById("excuse").innerText = excuses[randomIndex];
+        }
+    </script>
+</head>
+<body onload="randomExcuse()">
+    <h1>Your Excuse</h1>
+    <p id="excuse" style="font-size: 1.5em; font-weight: bold;"></p>
+    <button onclick="randomExcuse()">Shuffle Again</button>
+</body>
+</html>
